@@ -31,7 +31,7 @@ fn loopy_robot(cmd: &String) -> i8 {
 	match (x, y, d) {
 		(0, 0, 0) => 1,
 		(_, _, 2) => 2,
-		(_, _, dir) if dir == 1 || dir == 3 => 4,
+		(_, _, dir) if dir != 0 => 4,
 		(_, _, _) => -1
 	}
 }
