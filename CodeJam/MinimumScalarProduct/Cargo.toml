@@ -1,0 +1,4 @@
+[package]
+name = "MinimumScalarProduct"
+version = "0.1.0"
+authors = ["Gene Gonzalez <beanmachine44@gmail.com>"]
