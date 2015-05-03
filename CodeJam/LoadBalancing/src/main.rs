@@ -37,12 +37,12 @@ fn main() {
 		let data: Vec<u64> = buffer.trim().split(' ').map(|x| u64::from_str(&x)
 					.ok().expect("Failed to parse item.")).collect();
 
-		let l = data[0] as f32;
-		let p = data[1] as f32;
-		let c = data[2] as f32;
+		let l = data[0] as f64;
+		let p = data[1] as f64;
+		let c = data[2] as f64;
 		let count = match (p/l).log(c).log2().ceil() {
-			x if x > 0f32 => x,
-			_ => 0f32
+			x if x > 0f64 => x,
+			_ => 0f64
 		};
 
 
